@@ -1,0 +1,10 @@
+{{ with .Params.image }}
+    {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+    {{ $resized_16 := $imageResource.Resize "x16" }}
+    <img
+        src="data:image/jpeg;base64,{{ $resized_16.Content | base64Encode }}"
+        alt=""
+    />
+{{ end }}
+
+{{ .Content }}
