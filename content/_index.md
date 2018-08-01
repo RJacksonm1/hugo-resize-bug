@@ -2,6 +2,8 @@
 image = "/uploads/cat.jpg"
 +++
 
+([Fixed in Hugo 0.46](https://gohugo.io/news/0.46-relnotes/))
+
 I should be 16px wide.
 
 I'm not on my first build (`resources/_gen` is empty).
@@ -17,3 +19,4 @@ hugo serve
 hugo serve
 # See 16px image
 ```
+
